@@ -11,7 +11,7 @@
                 </field>
             </field>
         </record>
-        <!-- <record model="ir.ui.view" id="purchase_order_form_contract_type_manager">
+        <record model="ir.ui.view" id="purchase_order_form_contract_type_manager">
             <field name="name">purchase.order.form.contract.type.manager</field>
             <field name="model">purchase.order</field>
             <field name="inherit_id" ref="purchase_order_form_contract_type"/>
@@ -21,6 +21,6 @@
                     <attribute name="readonly">0</attribute>
                 </field>
             </field>
-        </record> -->
+        </record>
     </data>
 </openerp>
