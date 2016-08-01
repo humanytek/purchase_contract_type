@@ -5,7 +5,6 @@
     'website': 'http://humanytek.com',
     'depends': ['purchase'],
     'data': [
-        'security/purchase_contract_type.xml',
         'views/purchase_contract_type.xml',
     ]
 }
