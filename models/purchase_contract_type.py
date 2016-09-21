@@ -10,5 +10,6 @@ class PurchaseContractType(models.Model):
         ('pm', 'Precio Minimo'),
         ('pd', 'Precio Despues'),
         ('pb', 'Precio Base'),
+        ('surplus', 'Excedente'),
         ('na', 'No aplica'),
     ], default='na', required=True)
