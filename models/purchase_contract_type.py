@@ -1,4 +1,5 @@
 from openerp import api, fields, models
+import amount_to_text_es_MX
 
 
 class PurchaseContractType(models.Model):
@@ -29,7 +30,7 @@ class PurchaseContractType(models.Model):
     @api.one
     @api.depends('tons')
     def _compute_tons_text(self):
-        self.tons_text = "TODO"
+        self.tons_text = amount_to_text_es_MX.get_amount_to_text(self, self.tons, 'es_MX', 'MX')
 
     @api.one
     @api.depends('order_line')
