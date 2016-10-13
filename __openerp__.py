@@ -7,5 +7,6 @@
     'data': [
         'views/axc_contract.xml',
         'views/purchase_contract_type.xml',
+        'views/purchase_order_line.xml',
     ]
 }
