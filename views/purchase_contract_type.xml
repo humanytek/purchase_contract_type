@@ -9,6 +9,9 @@
                 <field name="partner_id" position="before">
                     <field name="contract_type"/>
                 </field>
+                <field name="picking_type_id" position="after">
+                    <field name="is_signed"/>
+                </field>
             </field>
         </record>
     </data>

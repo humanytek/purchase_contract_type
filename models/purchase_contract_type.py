@@ -5,6 +5,8 @@ import amount_to_text_es_MX
 class PurchaseContractType(models.Model):
     _inherit = 'purchase.order'
 
+    is_signed = fields.Boolean()
+
     contract_type = fields.Selection([
         ('axc', 'AxC'),
         ('pf', 'Precio Fijo'),
