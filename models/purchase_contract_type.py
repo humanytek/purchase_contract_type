@@ -7,6 +7,8 @@ class PurchaseContractType(models.Model):
 
     is_signed = fields.Boolean()
 
+    auxiliary_contract = fields.Many2one('purchase.order', readonly=True)
+
     contract_type = fields.Selection([
         ('axc', 'AxC'),
         ('pf', 'Precio Fijo'),
@@ -24,7 +26,7 @@ class PurchaseContractType(models.Model):
     @api.one
     @api.depends('order_line')
     def _compute_tons(self):
-        self.tons = 0;
+        self.tons = 0
         for line in self.order_line:
             self.tons = line.product_qty
             break
